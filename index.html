@@ -8,6 +8,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="css/style.css">
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
@@ -30,43 +31,62 @@
       </header>
       <main>
             <div class="md:container md:mx-auto content-center">
-                  <div class="single-product py-20 flex items-center">
-                        <div class="product-image w-auto">
-                              <img class="w-auto" src="images/iphone.jpg" alt="">
+                  <div class="product bg-indigo-200 rounded-lg p-10">
+                        <div class="single-cart mb-10 rounded-lg p-10 flex bg-red-100 items-center">
+                              <div class="product-image w-auto">
+                                    <img class="w-auto" src="images/iphone.jpg" alt="">
+                              </div>
+                              <div class="product-description w-1/3">
+                                    <h2 class="text-2xl mx-5">iPhone 12 128GB Red</h2>
+                              </div>
+                              <div class="product-quantity ">
+                                    <button class="text-2xl p-2"><i class="fa-solid fa-minus"></i></button>
+                                    <input class="text-2xl text-center p-2" type="number" name="" value="1" id="">
+                                    <button class="text-2xl p-2"><i class="fa-solid fa-plus"></i></button>
+                              </div>
+                              <div class="product-price ">
+                                    <p class="text-2xl ml-5">$ <span class="text-2xl">1219</span></p>
+                              </div>
+                              <div class="corss-sign">
+                                    <button class="text-2xl text-bold ml-5 p-1 text-center text-orange-600">&#9587;</button>
+                              </div>
                         </div>
-                        <div class="product-description w-1/3">
-                              <h2 class="text-2xl mx-10">iPhone 12 128GB Red</h2>
+
+                        <div class="single-cart mb-10 rounded-lg p-10 flex bg-red-100 items-center">
+                              <div class="product-image w-auto">
+                                    <img class="w-auto" src="images/iphone.jpg" alt="">
+                              </div>
+                              <div class="product-description w-1/3">
+                                    <h2 class="text-2xl mx-5">iPhone 12 128GB Red</h2>
+                              </div>
+                              <div class="product-quantity ">
+                                    <button class="text-2xl p-2"><i class="fa-solid fa-minus"></i></button>
+                                    <input class="text-2xl text-center p-2" type="number" name="" value="1" id="">
+                                    <button class="text-2xl p-2"><i class="fa-solid fa-plus"></i></button>
+                              </div>
+                              <div class="product-price ">
+                                    <p class="text-2xl ml-5">$ <span class="text-2xl">1219</span></p>
+                              </div>
+                              <div class="corss-sign">
+                                    <button class="text-2xl text-bold ml-5 p-1 text-center text-orange-600">&#9587;</button>
+                              </div>
                         </div>
-                        <div class="product-quantity">
-                              <input class="text-2xl p-2" type="button" value="-">
-                              <input class="text-2xl text-center p-2" type="number" name="" value="1" id="">
-                              <input class="text-2xl p-2" type="button" value="+">
+
+                        <div class="tota-area mb-10 rounded-lg p-10 flex bg-red-100  justify-start">
+                              <div class="left-side w-3/4">
+                                    <p class="text-2xl text-bold">Sub Total : </p>
+                                    <p class="text-2xl text-bold">Tax : </p>
+                                    <p class="text-2xl text-bold">Total : </p>
+                              </div>
+                              <div class="total-area w-1/4">
+                                    <p class="text-2xl text-bold" >$ <span>1219</span> </p>
+                                    <p class="text-2xl text-bold" >$ <span>0</span> </p>
+                                    <p class="text-2xl text-bold" >$ <span>1219</span> </p>
+                              </div>
                         </div>
-                        <div class="product-price">
-                              <p class="text-2xl ml-5">$ <span class="text-2xl">1219</span></p>
-                        </div>
-                        <div class="corss-sign">
-                              <button class="text-1xl text-semibold ml-5 p-1 text-center text-orange-600">&#9587;</button>
-                        </div>
-                  </div>
-                  <div class="single-product flex items-center">
-                        <div class="product-image w-auto">
-                              <img class="w-auto" src="images/iphone-case.jpg" alt="">
-                        </div>
-                        <div class="product-description w-1/3">
-                              <h2 class="text-2xl mx-10">iPhone 12 Case</h2>
-                        </div>
-                        <div class="product-quantity">
-                              <input class="text-2xl p-2" type="button" value="-">
-                              <input class="text-2xl text-center p-2" type="number" name="" value="1" id="">
-                              <input class="text-2xl p-2" type="button" value="+">
-                        </div>
-                        <div class="product-price">
-                              <p class="text-2xl ml-5">$ <span class="text-2xl">1219</span></p>
-                        </div>
-                        <div class="corss-sign">
-                              <button class="text-1xl text-semibold ml-5 p-1 text-center text-orange-600">&#9587;</button>
-                        </div>
+                  
+                        <button class="text-2xl text-bold flex justify-end bg-green-900 text-purple-400 p-5 rounded-lg  hover:bg-purple-400 hover:text-green-900"  type="submit">Checkout</button>
+                        
                   </div>
             </div>
       </main>
