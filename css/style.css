@@ -1,3 +1,6 @@
 body{
       font-family: 'Roboto', sans-serif;
 }
+input[type="number"]{
+      width: 100px;
+}
